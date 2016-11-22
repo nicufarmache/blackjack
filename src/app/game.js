@@ -1,5 +1,10 @@
 import {Component} from '@angular/core';
 
+@Component({
+  selector: 'fountain-app',
+  template: require('./game.html')
+})
+
 const cardValueMap = {
   2: 2,
   3: 3,
@@ -15,14 +20,9 @@ const cardValueMap = {
   queen: 10,
   king: 10
 };
-
 const cardNumbers = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
 const cardSuits = ['hearts', 'spades', 'clubs', 'diamonds'];
 
-@Component({
-  selector: 'fountain-app',
-  template: require('./game.html')
-})
 export class GameComponent {
   constructor() {
     this.newGame();

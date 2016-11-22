@@ -1,10 +1,5 @@
 import {Component} from '@angular/core';
 
-@Component({
-  selector: 'fountain-app',
-  template: require('./game.html')
-})
-
 const cardValueMap = {
   2: 2,
   3: 3,
@@ -22,6 +17,11 @@ const cardValueMap = {
 };
 const cardNumbers = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
 const cardSuits = ['hearts', 'spades', 'clubs', 'diamonds'];
+
+@Component({
+  selector: 'fountain-app',
+  template: require('./game.html')
+})
 
 export class GameComponent {
   constructor() {
@@ -41,20 +41,17 @@ export class GameComponent {
   }
 
   dealCard() {
-    console.log('hit');
     this.playerCards.push(this.pickRandomCard());
     this.calculate();
   }
 
   dealDealerCard() {
-    console.log('dealer');
     this.showHoleCard = false;
     this.dealerCards.push(this.pickRandomCard());
     this.calculate();
   }
 
   stand() {
-    console.log('stand');
     this.playerStands = true;
     this.showButtons = false;
     this.calculate();
@@ -107,21 +104,18 @@ export class GameComponent {
   }
 
   playerWins() {
-    console.log('win');
     this.showButtons = false;
     this.showNewGame = true;
     this.message = "You win!";
   }
 
   playerLoses() {
-    console.log('lose');
     this.showButtons = false;
     this.showNewGame = true;
     this.message = "Dealer wins!";
   }
 
   draw() {
-    console.log('draw');
     this.showButtons = false;
     this.showNewGame = true;
     this.message = "Draw!";
@@ -131,7 +125,6 @@ export class GameComponent {
     const score = cards.reduce((sum, card) => sum + card.value, 0);
     // if score is over 21 and there are aces in the hand then replace first with value 1
     if (score > 21 && cards.map(card => card.value).includes(11)) {
-      console.log('ace case');
       const index = cards.map(card => card.value).indexOf(11);
       cards[index].value = 1;
       return this.getPoints(cards);

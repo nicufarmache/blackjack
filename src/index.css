@@ -1,0 +1,104 @@
+body {
+  background-color: #3c7535;
+  color: #FFFFFF;
+  font-family:Arial;
+}
+
+h1 {
+  margin: 5px;
+}
+
+.card {
+  border-radius: 10px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  margin: 5px;
+  display: inline-block;
+}
+
+
+.yellowButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+	margin:5px;
+}
+.yellowButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.yellowButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.sprite { background: #FFFFFF url('img/sprite.png') no-repeat top left; width: 170px; height: 248px;  } 
+.sprite.card-2-clubs { background-position: 0 0; } 
+.sprite.card-2-diamonds { background-position: 0 -258px; } 
+.sprite.card-2-hearts { background-position: 0 -516px; } 
+.sprite.card-2-spades { background-position: 0 -774px; } 
+.sprite.card-3-clubs { background-position: 0 -1032px; } 
+.sprite.card-3-diamonds { background-position: 0 -1290px; } 
+.sprite.card-3-hearts { background-position: 0 -1548px; } 
+.sprite.card-3-spades { background-position: 0 -1806px; } 
+.sprite.card-4-clubs { background-position: 0 -2064px; } 
+.sprite.card-4-diamonds { background-position: 0 -2322px; } 
+.sprite.card-4-hearts { background-position: 0 -2580px; } 
+.sprite.card-4-spades { background-position: 0 -2838px; } 
+.sprite.card-5-clubs { background-position: 0 -3096px; } 
+.sprite.card-5-diamonds { background-position: 0 -3354px; } 
+.sprite.card-5-hearts { background-position: 0 -3612px; } 
+.sprite.card-5-spades { background-position: 0 -3870px; } 
+.sprite.card-6-clubs { background-position: 0 -4128px; } 
+.sprite.card-6-diamonds { background-position: 0 -4386px; } 
+.sprite.card-6-hearts { background-position: 0 -4644px; } 
+.sprite.card-6-spades { background-position: 0 -4902px; } 
+.sprite.card-7-clubs { background-position: 0 -5160px; } 
+.sprite.card-7-diamonds { background-position: 0 -5418px; } 
+.sprite.card-7-hearts { background-position: 0 -5676px; } 
+.sprite.card-7-spades { background-position: 0 -5934px; } 
+.sprite.card-8-clubs { background-position: 0 -6192px; } 
+.sprite.card-8-diamonds { background-position: 0 -6450px; } 
+.sprite.card-8-hearts { background-position: 0 -6708px; } 
+.sprite.card-8-spades { background-position: 0 -6966px; } 
+.sprite.card-9-clubs { background-position: 0 -7224px; } 
+.sprite.card-9-diamonds { background-position: 0 -7482px; } 
+.sprite.card-9-hearts { background-position: 0 -7740px; } 
+.sprite.card-9-spades { background-position: 0 -7998px; } 
+.sprite.card-10-clubs { background-position: 0 -8256px; } 
+.sprite.card-10-diamonds { background-position: 0 -8514px; } 
+.sprite.card-10-hearts { background-position: 0 -8772px; } 
+.sprite.card-10-spades { background-position: 0 -9030px; } 
+.sprite.card-ace-clubs { background-position: 0 -9288px; } 
+.sprite.card-ace-diamonds { background-position: 0 -9546px; } 
+.sprite.card-ace-hearts { background-position: 0 -9804px; } 
+.sprite.card-ace-spades { background-position: 0 -10062px; } 
+.sprite.card-back { background-position: 0 -10320px; } 
+.sprite.card-black-joker { background-position: 0 -10578px; } 
+.sprite.card-jack-clubs { background-position: 0 -10836px; } 
+.sprite.card-jack-diamonds { background-position: 0 -11094px; } 
+.sprite.card-jack-hearts { background-position: 0 -11352px; } 
+.sprite.card-jack-spades { background-position: 0 -11610px; } 
+.sprite.card-king-clubs { background-position: 0 -11868px; } 
+.sprite.card-king-diamonds { background-position: 0 -12126px; } 
+.sprite.card-king-hearts { background-position: 0 -12384px; } 
+.sprite.card-king-spades { background-position: 0 -12642px; } 
+.sprite.card-queen-clubs { background-position: 0 -12900px; } 
+.sprite.card-queen-diamonds { background-position: 0 -13158px; } 
+.sprite.card-queen-hearts { background-position: 0 -13416px; } 
+.sprite.card-queen-spades { background-position: 0 -13674px; } 
+.sprite.card-red-joker { background-position: 0 -13932px; } 

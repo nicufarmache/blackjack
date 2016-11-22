@@ -1,0 +1,16 @@
+<div *ngIf="showBoard">
+	<h1>Dealer's cards ({{ dealerScore }})</h1>
+	<ul>
+	    <li *ngFor="let card of dealerCards" class="sprite card card-{{card.number}}-{{card.suit}}" title="{{card.number}} of {{card.suit}}"></li>
+	    <li *ngIf="showHoleCard" class="sprite card card-back" title="hole card"></li>
+	</ul>
+
+	<h1>Your cards ({{ playerScore }})</h1>
+	<ul>
+	    <li *ngFor="let card of playerCards" class="sprite card card-{{card.number}}-{{card.suit}}" title="{{card.number}} of {{card.suit}}"></li>
+	</ul>
+	<button *ngIf="showButtons" (click)="dealCard()" class="yellowButton">Hit</button>
+	<button *ngIf="showButtons" (click)="stand()" class="yellowButton">Stand</button>
+	<button *ngIf="showNewGame" (click)="newGame()" class="yellowButton">Play new game</button>
+	<h1>{{ message }}</h1>
+</div>
